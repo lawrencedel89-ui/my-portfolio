@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>John Smith - Portfolio</title>
+    <link rel="stylesheet" href="./style.css"/>
+    <script src="./script.js"></script>
+  </head>
+  <body>
+    <!-- Navigation Bar -->
+    <nav>
+      <div id="home">
+        <div class="profile_name">
+          John Smith
+          <div class="contact_info">
+            <img src="html_finalprojimages/envelope.png" alt="https://icons8.com/icon/124377/circled-envelope"/>
+          jsmith@jeemail.com
+        </div>
+        <div style="clear:both;"></div>
+        <div class="contact_info">
+          <img src="html_finalprojimages/phone.png" alt="https://icons8.com/icon/124377/circled-envelope"/>
+          +00 649283999
+
+        </div>
+        </div>
+        <div class="topdiv">
+          <a class="topmenu" href="#about-me">About Me</a>
+          <a class="topmenu" href="#skills">Skills</a>
+          <a class="topmenu" href="#projects">Projects</a>
+          <a class="topmenu" href="#recommendations">Recommendations</a>
+        </div>
+      </div>    
+    </nav>
+
+    <!-- About Me -->
+    <section id="about-me" class="container">
+      <div>
+        <img src="portrait-8694041_1280.jpg" class="profile_image"/>
+      </div>
+
+      <div>
+          <h1>
+            Hi, I'm John Smith!
+          </h1>
+          <p>
+            I am a Technical Analyst with four years of experience in infrastructure, working across a range of applications and services, including cloud-based solutions on AWS. I have a strong interest in emerging AI technologies and actively follow tools such as Google Gemini and Perplexity AI. I am keen to build my own chatbot to deepen my understanding of AI-driven systems and to apply these technologies in practical, real-world use cases.
+          </p>
+      </div>
+    </section>
+              
+    <!-- Skills -->
+    <section id="skills">
+      <h2>Skills</h2>
+      <div style="clear:both;"></div>
+
+      <div class="all_skills">
+        <div class="skill">
+          <img src="html_finalprojimages/html5.png"/>
+          <h6>HTML</h6>
+          <p>4 years experience</p>
+        </div>  
+
+        <div class="skill">
+          <img src="html_finalprojimages/js.jpeg"/>
+          <h6>JavaScript</h6>
+          <p>4 years experience</p>
+        </div>  
+
+        <div class="skill">
+            <img src="css3-1841590_1280.png"/>
+            <h6>CSS</h6>
+            <p>4 years experience</p>
+          </div>
+
+          <div class="skill">
+            <img src="python-8665904_1280.png"/>
+            <h6>Python</h6>
+            <p>4 years experience</p>
+          </div>
+
+          <div class="skill">
+            <img src="linux-151619_1280.png"/>
+            <h6>Linux</h6>
+            <p>4 years experience</p>
+          </div>
+
+
+
+      </div>
+    </section>
+          
+    <!-- Projects -->
+    <section class="projects" id="projects">
+      <h2>
+        Projects
+      </h2>
+      <div style="clear:both;"></div>
+
+        <div id="projects-container" class="projects-container">
+          <div class="project-card">
+            <h3>Log File Anomaly Detection Tool</h3>
+            <ul>
+              <li>Created a Python-based model that analyzes server or application logs and flags unusual patterns such as repeated failures or spikes in errors. This shows practical use of machine learning for monitoring and aligns well with your technical analyst experience.</li>
+            </ul>
+          </div>
+          <hr>
+          <div class="project-card">
+            <h3>Natural Language to SQL Query Generator</h3>
+            <ul>
+              <li>Developed a tool that converts plain English questions into SQL queries against a sample database. This highlights applied generative AI, reinforces your SQL background, and demonstrates business-friendly AI use cases.</li>
+            </ul>
+          </div>
+          <hr>
+          <div class="project-card">
+            <h3>AI-Powered Resume Analyzer</h3>
+            <ul>
+              <li>Built a model that scans resumes and provides scoring or improvement suggestions based on job descriptions. This showcases NLP skills and can tie into HR or recruitment applications, demonstrating practical AI use in business processes.</li>
+            </ul>
+          </div>
+    </div>
+    </section>
+    <div style="clear:both;"></div>
+
+    <!-- Recommendations -->
+    <section id="recommendations">
+      <h2>Recommendations</h2>
+      <div style="clear:both;"></div>
+      <div class="all_recommendations" id="all_recommendations">
+        <div class="recommendation">
+          <span>&#8220;</span>
+          John consistently demonstrated exceptional Linux expertise, managing complex servers and optimizing performance. His proactive approach and problem-solving skills made him an invaluable member of our IT operations team.
+          <span>&#8221;</span>
+        </div>
+        <div class="recommendation">
+          <span>&#8220;</span>
+          John’s Python coding skills are outstanding. He developed efficient scripts and automation tools that significantly improved our workflows, always delivering clean, maintainable, and well-documented code.
+          <span>&#8221;</span>
+        </div>
+        <div class="recommendation">
+          <span>&#8220;</span>
+          John excelled in applying AI and LLM technologies to real-world projects. His creativity and technical proficiency enabled rapid development of intelligent solutions that enhanced our business processes.
+          <span>&#8221;</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Recommendation Form -->
+    <section id="contact">
+      <div class="flex_center">
+        <fieldset>
+          <legend class="introduction">Leave a Recommendation</legend>          
+          <input type="text" placeholder="Name (Optional)"> <br/>
+          <textarea id="new_recommendation" cols="500" rows="10" placeholder="text"></textarea>
+          <div class="flex_center">
+            <button id="recommend_btn" onclick="addRecommendation()">Submit</button>
+          </div>
+        </fieldset>
+      </div>
+    </section>
+
+    <div class="iconbutton">
+      <a href="#home">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="white" width="63px">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M15 11.25l-3-3m0 0l-3 3m3-3v7.5M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+          </svg>
+      </a>
+    </div>
+
+    <div class="popup" id="popup">
+        <h3>Thanks for the recommendation</h3>
+        <img src="html_finalprojimages/checkmark--outline.svg" alt="Checkmark"/>
+        <button onclick="showPopup(true)">Ok</button>
+      </div>         
+  </body>
+</html>
